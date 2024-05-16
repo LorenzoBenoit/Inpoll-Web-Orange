@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sondages</title>
+
+    <link rel="stylesheet" href="css/sondages.css">
+    <link rel="icon" href="img/Icone.png" href="/favicon.png">
+
+    <script src="https://kit.fontawesome.com/d31a924955.js" crossorigin="anonymous"></script>
+</head>
+
+<body background="img/Fond.png">
+    <header>
+        <nav>
+            <div class="navigation">
+                <img src="img/Logo.png">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a class="active" href="sondages.html">Sondages</a></li>
+                <li><a href="visuels.html">Visuels</a></li>
+            </div>
+            <div class="profil">
+                <li><a href="profil.html">Profil</a></li>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="content">
+                <form id="form">
+                    <h1>Créer un sondage</h1>
+                    <div class="titre">
+                        <input type="text" id="titre" placeholder="Saisissez le titre" required/>
+                    </div>
+
+                    <div class="questionBox">
+                        <div class="question">
+                            <input type="textarea" id="question" value="" placeholder="Saisissez votre question" required/>
+                        </div>
+                    </div>
+
+                    <div class="choix">
+                        <select>
+                            <option>Sélectionner le mode de réponse</option>
+                            <option id="slam">Texte</option>
+                            <option id="sisr">Boutons radios</option>
+                            <option id="sisr">Cases à cocher</option>
+                        </select>
+                    </div>
+
+                    <div class="send">
+                        <button type="button">Ajouter</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

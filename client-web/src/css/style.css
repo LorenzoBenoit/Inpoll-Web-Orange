@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Montserrat:wght@900&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header .active{
+    border-bottom: 2px solid #FFBD59;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+header nav img {
+    height: 30px;
+}
+
+header nav .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+header nav .navigation li {
+    margin: 10px;
+    list-style: none;
+}
+
+header nav .navigation li a {
+    padding: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+
+header nav .navigation li a:hover {
+    border-bottom: 2px solid #FFBD59;
+}
+
+header nav .profil {
+    display: flex;
+    width: 120px;
+}
+
+header nav .profil li {
+    margin: 10px;
+    list-style: none;
+}
+
+header nav .profil li a {
+    padding: 10px 30px 10px 30px;
+    color: #ffffff;
+    background-color: #FFBD59;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+header .container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    color: #000000;
+}
+
+header .container .content h1 {
+    color: #FFBD59;
+    text-align: center;
+    font-family: "Climate Crisis", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 4em;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header .container .content p {
+    color: #000000;
+    text-align: center;
+}
+
+.presentation {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.presentation .creation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 80px;
+    color: #000000;
+}
+
+.presentation .creation h1 {
+    color: #FFBD59;
+    text-align: left;
+    font-weight: 800;
+}
+
+.presentation .creation p {
+    text-align: left;
+}
+
+.presentation .creation .sondage-Btn {
+    margin-top: 30px;
+}
+
+.presentation .creation .sondage-Btn a {
+    padding: 14px 26px 14px 26px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #FFBD59;
+    background-color: #FFBD59;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all ease-in-out 0.10s;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.presentation .creation .sondage-Btn a:hover {
+    border: 1px solid #F6AF45;
+    background-color: #F6AF45;
+}
+
+.presentation .poll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 80px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    color: #ffffff;
+    background-color: #FFBD59;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    
+    <link rel="stylesheet" href="css/inscription.css">
+    <link rel="icon" href="img/Icone.png" href="/favicon.png">
+
+    <script defer src="js/data.js"></script>
+    <script defer src="js/insc.js"></script>
+
+    <script src="https://kit.fontawesome.com/d31a924955.js" crossorigin="anonymous"></script>
+</head>
+
+<body background="img/Fond.png">
+    <header>
+        <div class="container">
+            <div class="content">
+                <form id="form" class="form" action="index.html">
+                    <h1>Inscrivez-vous</h1>
+
+                    <div class="prenom">
+                        <input type="text" id="prenom" placeholder="Saisissez votre prénom" required/>
+                    </div>
+
+                    <div class="nom">
+                        <input type="text" id="nom" placeholder="Saisissez votre nom" required/>
+                    </div>
+
+                    <div class="email">
+                        <input type="email" id="email" placeholder="Saisissez votre email" required/>
+                    </div>
+
+                    <div class="choix">
+                        <select>
+                            <option>Sélectionner votre formation</option>
+                            <option id="slam">BTS SIO SLAM</option>
+                            <option id="sisr">BTS SIO SISR</option>
+                        </select>
+                    </div>
+
+                    <div class="inscription">
+                        <button type="button" id="btn-insc">S'inscrire</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

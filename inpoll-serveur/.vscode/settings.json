@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/902ef855-fbe3-4904-962d-0424ba99fa35/resourceGroups/rg-malraux/providers/Microsoft.Web/sites/snippet",
+    "appService.deploySubpath": "."
+}

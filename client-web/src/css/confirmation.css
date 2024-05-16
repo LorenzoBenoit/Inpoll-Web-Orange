@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-size: cover;
+}
+
+header .active {
+    border-bottom: 2px solid #ffffff;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+header .container .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: #0000002f 0px 0px 10px 5px;
+}
+
+header .container .content form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+header .container .content form h1 {
+    margin-bottom: 20px;
+    color: #FFBD59;
+    text-align: center;
+}
+
+header .container .content form p {
+    margin-bottom: 20px;
+    font-size: 0.8em;
+}
+
+header .container .content form .code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+header .container .content form .code input {
+    padding: 7px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #b8b8b8;
+    color: #7c7c7c;
+    border-radius: 5px;
+}
+
+header .container .content form .code input:focus {
+    border: 1px solid #FFBD59;
+}
+
+header .container .content form .inscription button {
+    padding: 14px;
+    width: 100%;
+    border: 1px solid #FFBD59;
+    background-color: #FFBD59;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all ease-in-out 0.10s;
+    border-radius: 5px;
+}
+
+header .container .content form .inscription button:hover {
+    border: 1px solid #F6AF45;
+    background-color: #F6AF45;
+}
