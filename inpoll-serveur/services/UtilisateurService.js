@@ -21,6 +21,14 @@ class UtilisateurService extends BaseService {
       throw error;
     }
   }
+
+  async getUtilisateursBloques(req, res) {
+    try {
+      return await this.model.find({ "bloque" : true})
+    } catch (error) {
+      throw error;
+    }
+  }
 }
 
 export default UtilisateurService;

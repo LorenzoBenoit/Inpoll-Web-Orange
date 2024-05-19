@@ -2,7 +2,9 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import utilisateurRouter from "./routes/utilisateurRoutes.js";
-import sondageRouter from "./routes/sondageRouter.js";
+import sondageRouter from "./routes/sondageRoutes.js";
+import blocageRouter from "./routes/blocageRoutes.js"
+import expressRouter from "./routes/expressRoutes.js"
 import connection from "./tools/connection.js";
 
 const app = express();
@@ -22,11 +24,11 @@ connection()
       res.send("Hello World!");
     });
 
-    // Routes pour les sondages
+    // Routes
     app.use("/sondages", sondageRouter);
-
-    // Routes pour les utilisateurs
     app.use("/utilisateurs", utilisateurRouter);
+    app.use("/express", expressRouter);
+    app.use("/bloques", blocageRouter);
 
     // Gestion des erreurs 404 (route non trouvée)
     app.use((req, res) => {

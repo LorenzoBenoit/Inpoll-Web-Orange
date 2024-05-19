@@ -1,5 +1,5 @@
 async function fetchSondage() {
-    const recupSondage = await fetch("https://inpoll-lbenoit.azurewebsites.net/sondages");
+    const recupSondage = await fetch("https://inpoll-lbenoit.azurewebsites.net/express");
     if (recupSondage.ok) {
         return await recupSondage.json()
     }

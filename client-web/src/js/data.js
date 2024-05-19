@@ -1,5 +1,5 @@
 const LS_CLE_ID = 'id-util';
-const URL_SERVEUR = 'https://inpoll-wplaquet.azurewebsites.net';
+const URL_SERVEUR = 'https://inpoll-lbenoit.azurewebsites.net';
 const URL_UTILISATEURS = `${URL_SERVEUR}/utilisateurs`;
 
 /**

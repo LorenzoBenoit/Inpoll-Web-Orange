@@ -4,15 +4,12 @@ import SondageController from '../controllers/SondageController.js';
 
 const controller = new SondageController();
 
-// Créer un nouveau Sondage
+// Créer un nouveeau Sondage
 router.post('/', (req, res) => {
     new SondageController().add(req, res);
 });
 
-// Récupérer les sondages express d'un utilisateur
-router.get('/express/:id',  (req, res) => {
-    new SondageController().getExpressById(req, res);
-}); 
+router.get("/express/:id", SondagesController.expressAjoutUtilisateur);
 
 // Récupérer tous les Sondages, et aussi un Sondage par email
 router.get('/',  (req, res) => {

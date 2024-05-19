@@ -6,4 +6,10 @@ class SondageService extends BaseService {
     }
 }
 
+try {
+    return await this.model.find({"utilisateur":id});
+  } catch (error) {
+    throw error;
+  }
+
 export default SondageService;
